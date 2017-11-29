@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="leonardoleite.colecaojogos.TelaInicialActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/etBusca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Buscar Jogo..."
+            android:inputType="textPersonName" />
+
+        <ListView
+            android:id="@+id/lvJogos"
+            android:layout_width="match_parent"
+            android:layout_height="404dp" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_green_light"
+            android:editable="false"
+            android:elevation="0dp"
+            android:text="+"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColorLink="@android:color/holo_blue_bright"
+            android:theme="@style/AppTheme" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
